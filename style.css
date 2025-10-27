@@ -11,6 +11,7 @@ body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(63, 63, 63);
+  background-color: #f7f7f7;
 }
 
 
@@ -18,12 +19,12 @@ main {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding: 10px;
 }
 
 #leftPanel {
   padding: 10px;
-  width: fit-content;
+  /* width: fit-content; */
   border-radius: 10px;
   background-color: rgb(228, 236, 255);
 }
@@ -31,13 +32,13 @@ main {
   /* border: 1px solid green; */
   margin-bottom: 20px;
 }
-#leftPanel .cat-ttl {
+#leftPanel .title {
   width: 200px;
   padding-bottom: 2px;
   margin-bottom: 10px;
   border-bottom: 1px solid rgb(184, 198, 218);
 }
-.cat-ttl h2 {
+.title h2 {
   font-weight: 100;
 }
 
@@ -47,7 +48,7 @@ main {
 }
 
 .cat-compo {
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 5px;
   padding: 6px 8px;
   display: flex;
@@ -62,10 +63,47 @@ main {
   background-color: royalblue;
   border-radius: 3px;
 }
-.name {
+.cat-name {
   font-size: 15px;
   flex: 1;
 }
 .task-count {
   font-size: 10px;
+}
+
+/* *************************** */
+
+#mainPanel {
+  flex: 1;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(228, 236, 255);
+}
+
+#task-view h2{
+  font-weight: 300;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(184, 198, 218);
+}
+.task {
+  margin-top: 5px;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: rgb(206, 218, 255);
+  border: 1px solid rgba(65, 105, 225, 0.432);
+}
+.task label {
+  flex: 1;
+}
+.task span {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background-color: rgb(179, 198, 255);
 }
