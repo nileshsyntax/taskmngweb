@@ -9,26 +9,36 @@ html,
 body {
    width: 100%;
    height: 100%;
-   font-family: Arial, Helvetica, sans-serif;
-   color: #3f3f3f;
-   /* color: aliceblue; */
-   background: #e7eaec;
-   /* background: #272c41; */
+   font-family: "Ubuntu Mono", monospace;
+   color: var(--font-drk);
+   word-spacing: -3px;
+   background: var(--light-bg);
 }
 
 :root {
    --dark-bg: #272c41;
    --dark-fg: #343a53;
+
+   --light-bg: #deedee;
+   --light-fg: #f6fffe;
+
+   /* font and most svg color */
    --font-lgt: #f0f8ff;
-   --font-drk: #3f3f3f;
+   --font-drk: #465170;
 }
 
 .cmn-stl {
-   border-radius: 20px;
    padding: 10px;
+   border-radius: 18px;
    box-shadow: 0px 0px 4px 0px #3f3f3f11;
-   background: #fafbff;
-   /* background: #343a53; */
+   background: var(--light-fg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: 200;
 }
 
 main {
@@ -38,7 +48,6 @@ main {
    gap: 16px;
    padding: 16px;
 }
-
 
 #sub-div {
    flex: 1;
@@ -51,63 +60,83 @@ main {
    display: grid;
    grid-template-columns: 10fr 4fr;
    grid-template-rows: 50px 1fr;
+   grid-template-areas:
+      'top-nav top-nav'
+      'prime-sec daily-rep';
    gap: 16px;
 }
 
+
+/* -------- Here goes different -------- */
+
+/* id sub-div   */
+
+
+/* id main-div section elements */
+
 #top-nav {
-   grid-column: 1 / 3;
-   grid-row: 1;
+   padding: 0 12px;
+   grid-area: top-nav;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
 #prime-sec {
-   grid-column: 1;
-   grid-row: 2;
+   grid-area: prime-sec;
 }
 
 #daily-rep {
-   /* position: absolute; */
-   grid-row: 2;
-   grid-column: 2;
+   grid-area: daily-rep;
 }
 
+
+
+
+/* id top-nav elements */
 #profile {
-   width: fit-content;
    display: flex;
    gap: 7px;
    align-items: center;
+   width: fit-content;
 }
+
 #profile img {
    width: 34px;
    aspect-ratio: 1;
    border-radius: 70px;
    border: 1px solid #638a8f73;
 }
-#profile h2 {
-   font-weight: 200;
-}
-.nav-button {
-   display: flex;
-   gap: 5px;
-   border: 1px solid red;
-}
-#add-new {
+
+#nav-buttons {
    display: flex;
    align-items: center;
+   gap: 5px;
+   cursor: pointer;
+}
+
+#add-new {
+   display: flex;
    gap: 2px;
-   padding: 5px 8px 5px 5px;
-   font-size: 12px;
+   align-items: center;
+   padding: 4px 6px;
+   font-size: 14px;
    border-radius: 60px;
    background-color: #c0fff6;
    border: 1px solid #638a8f73;
 }
+
 #add-new img {
-   width: 16px;
+   width: 18px;
    aspect-ratio: 1;
 }
+
+#drk-wht {
+   display: flex;
+   align-items: center;
+}
+
 #drk-wht img {
-   width: 30px;
+   width: 27px;
    aspect-ratio: 1;
 }
