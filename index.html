@@ -44,7 +44,11 @@
          <div id="gap"></div>
          <div class="setting">
             <div class="access"><img src="/src/assets/setting-drk.svg" alt="setting icon">Setting</div>
-            <img src="/src/assets/moon.svg" alt="">
+            <div id="mode-btn">
+               <div class="icon-switch">
+                  <!-- <img src="/src/assets/moon.svg" alt=""> -->
+               </div>
+            </div>
          </div>
       </div>
 
@@ -59,19 +63,50 @@
                <div id="add-new">
                   <img src="/src/assets/add-drk-md.svg" alt="">Add One
                </div>
-               <!-- <div id="drk-wht">
-                  <img src="/src/assets/moon.svg" alt="">
-               </div> -->
+               <div id="calender">
+                  <img src="/src/assets/calendar.svg" alt="">
+               </div>
             </div>
          </div>
 
 
-         <div id="task-sec" class="cmn-stl">This section
-            <h2>That section</h2>
+         <div id="task-sec" class="cmn-stl">
+            <div class="bt-h">
+               <h2>Today</h2>
+            </div>
+            <div class="task-item-list">
+               <div class="task-item">
+                  <div class="content">
+                     <input type="checkbox" name="checkbox" id="fd">
+                     <label for="fd">Task: Write a Note</label>
+                  </div>
+                  <div class="inf-util">
+                     <span>Topic</span>
+                     <span>Priority</span>
+                     <span>Annotation</span>
+                     <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
+                  </div>
+               </div>
+            </div>
          </div>
 
 
-         <div id="daily-rep" class="cmn-stl"><h4>Looping Looping</h4></div>
+         <div id="daily-rep" class="cmn-stl">
+            <div class="bt-h">
+               <h2>Daily Repititaion</h2>
+            </div>
+            <div class="task-item-list">
+               <div class="task-item">
+                  <div class="content">
+                     <input type="checkbox" name="checkbox" id="fd">
+                     <label for="fd">Exercise</label>
+                  </div>
+                  <div class="inf-util">
+                     <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </main>
 </body>
