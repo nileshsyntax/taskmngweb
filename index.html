@@ -15,52 +15,64 @@
 
 <body>
    <main>
+      <!-- Side Panel component -->
       <div id="side-panel" class="cmn-stl">
-         <div class="panel-item">
-            <div class="bt-h">
-               <h3>Hello World</h3>
+         <div class="panel-card">
+            <div class="pcrd-ttl">
+               <h3>Time</h3>
             </div>
-            <div class="panel-inside">
-               <div class="component">
+            <div class="card-main">
+               <!-- category component -->
+               <div class="component onselect">
                   <div class="acnt-clor"></div>
                   <div class="c-name">Today</div>
                   <div class="count">5</div>
                </div>
+               <!-- category component -->
             </div>
          </div>
-         <div id="by-topic" class="panel-item">
-            <div class="bt-h">
-               <h3>Hello World</h3>
+         <div class="panel-card">
+            <div class=" pcrd-ttl">
+               <h3>On Topic</h3>
                <img src="/src/assets/add-drk-md.svg" alt="">
             </div>
-            <div class="panel-inside pi-scroll">
+            <div class="card-main pi-scroll">
+               <!-- category component -->
                <div class="component">
                   <div class="acnt-clor"></div>
                   <div class="c-name">Study</div>
                   <div class="count">5</div>
                </div>
+               <!-- category component -->
             </div>
          </div>
+
          <div id="gap"></div>
+
          <div class="setting">
-            <div class="access"><img src="/src/assets/setting-drk.svg" alt="setting icon">Setting</div>
+            <div class="st-access">
+               <img src="/src/assets/setting-drk.svg" alt="setting icon">Setting
+            </div>
             <div id="mode-btn">
-               <div class="icon-switch">
+               <div class="circle">
                   <!-- <img src="/src/assets/moon.svg" alt=""> -->
                </div>
             </div>
          </div>
       </div>
 
+
+      <!-- main section component -->
       <div id="main-sec">
 
+         <!-- Navigation Component -->
          <div id="top-nav" class="cmn-stl">
-            <div id="profile">
+            <div id="prof-info">
                <img src="/src/assets/avt.jpg" alt="">
                <h2>Hi, Nilesh...</h2>
             </div>
             <div id="nav-buttons">
-               <div id="add-new">
+               <div id="add-task">
                   <img src="/src/assets/add-drk-md.svg" alt="">Add One
                </div>
                <div id="calender">
@@ -68,17 +80,20 @@
                </div>
             </div>
          </div>
+          <!-- Navigation Component -->
 
 
+          <!-- Task List Section -->
          <div id="task-sec" class="cmn-stl">
-            <div class="bt-h">
+            <div class="pcrd-ttl">
                <h2>Today</h2>
             </div>
             <div class="task-item-list">
+               <!-- Task item component -->
                <div class="task-item">
                   <div class="content">
                      <input type="checkbox" name="checkbox" id="fd">
-                     <label for="fd">Task: Write a Note</label>
+                     <label for="fd">Write the Note</label>
                   </div>
                   <div class="inf-util">
                      <span>Topic</span>
@@ -87,15 +102,20 @@
                      <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
                   </div>
                </div>
+               <!-- Task item component -->
             </div>
          </div>
+         <!-- Task List Section -->
 
 
+         <!-- Show daily rep section -->
          <div id="daily-rep" class="cmn-stl">
-            <div class="bt-h">
+            <div class="pcrd-ttl">
                <h2>Daily Repititaion</h2>
             </div>
             <div class="task-item-list">
+
+               <!-- Repititave Task item component -->
                <div class="task-item">
                   <div class="content">
                      <input type="checkbox" name="checkbox" id="fd">
@@ -105,8 +125,19 @@
                      <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
                   </div>
                </div>
+               <div class="task-item">
+                  <div class="content">
+                     <input type="checkbox" name="checkbox" id="fd">
+                     <label for="fd">Read Book</label>
+                  </div>
+                  <div class="inf-util">
+                     <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
+                  </div>
+               </div>
+               <!-- Repititave Task item component -->
             </div>
          </div>
+         <!-- Show daily rep section -->
       </div>
    </main>
 </body>
