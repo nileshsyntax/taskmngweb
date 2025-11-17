@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="responsive.css">
+   <link rel="stylesheet" href="styles/responsive.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -23,7 +23,7 @@
             </div>
             <div class="card-main">
                <!-- category component -->
-               <div class="component onselect">
+               <div class="component">
                   <div class="acnt-clor"></div>
                   <div class="c-name">Today</div>
                   <div class="count">5</div>
@@ -34,7 +34,7 @@
          <div class="panel-card">
             <div class=" pcrd-ttl">
                <h3>On Topic</h3>
-               <img src="/src/assets/add-drk-md.svg" alt="">
+               <img src="assets/add-drk-md.svg" alt="">
             </div>
             <div class="card-main pi-scroll">
                <!-- category component -->
@@ -51,11 +51,11 @@
 
          <div class="setting">
             <div class="st-access">
-               <img src="/src/assets/setting-drk.svg" alt="setting icon">Setting
+               <img src="assets/setting-drk.svg" alt="setting icon">Setting
             </div>
             <div id="mode-btn">
                <div class="circle">
-                  <!-- <img src="/src/assets/moon.svg" alt=""> -->
+                  <!-- <img src="assets/moon.svg" alt=""> -->
                </div>
             </div>
          </div>
@@ -63,28 +63,27 @@
 
 
       <!-- main section component -->
-      <div id="main-sec">
-
+      <div id="main-panel">
          <!-- Navigation Component -->
-         <div id="top-nav" class="cmn-stl">
+         <div id="nav" class="cmn-stl">
             <div id="prof-info">
-               <img src="/src/assets/avt.jpg" alt="">
+               <img src="assets/avt.jpg" alt="">
                <h2>Hi, Nilesh...</h2>
             </div>
             <div id="nav-buttons">
                <div id="add-task">
-                  <img src="/src/assets/add-drk-md.svg" alt="">Add One
+                  <img src="assets/add-drk-md.svg" alt="">Add Task
                </div>
                <div id="calender">
-                  <img src="/src/assets/calendar.svg" alt="">
+                  <img src="assets/calendar.svg" alt="">
                </div>
             </div>
          </div>
-          <!-- Navigation Component -->
+         <!-- Navigation Component -->
 
 
-          <!-- Task List Section -->
-         <div id="task-sec" class="cmn-stl">
+         <!-- Task List Section -->
+         <div id="task-panel" class="cmn-stl">
             <div class="pcrd-ttl">
                <h2>Today</h2>
             </div>
@@ -92,17 +91,31 @@
                <!-- Task item component -->
                <div class="task-item">
                   <div class="content">
-                     <input type="checkbox" name="checkbox" id="fd">
-                     <label for="fd">Write the Note</label>
+                     <input type="checkbox" name="checkbox" id="tsk-1">
+                     <label for="tsk-1">Write the Note</label>
                   </div>
                   <div class="inf-util">
+                     <span>Deadline</span>
                      <span>Topic</span>
                      <span>Priority</span>
                      <span>Annotation</span>
-                     <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
+                     <div class="edit-btn"><img src="assets/edit-drk.svg" alt=""></div>
                   </div>
                </div>
                <!-- Task item component -->
+               <br>
+               0. Freshly finalizing the last written initial CSS code <br>
+               1. Add hover effect <br>
+               2. Add Cursor pointer <br>
+               3. Create function and element on click Add task <br>
+               4. mode toggle button animation <br>
+               5. Update Task item UI for topic and priority option <br>
+               6. Any other UI fixes <br>
+               <br>
+               7. Further- add edit Profile option in setting
+               8. Add dark-light mode functionality
+
+
             </div>
          </div>
          <!-- Task List Section -->
@@ -113,25 +126,25 @@
             <div class="pcrd-ttl">
                <h2>Daily Repititaion</h2>
             </div>
-            <div class="task-item-list">
+            <div class="task-item-list rep-task-item">
 
                <!-- Repititave Task item component -->
                <div class="task-item">
                   <div class="content">
-                     <input type="checkbox" name="checkbox" id="fd">
-                     <label for="fd">Exercise</label>
+                     <input type="checkbox" name="checkbox" id="r-tsk-1">
+                     <label for="r-tsk-1">Exercise</label>
                   </div>
                   <div class="inf-util">
-                     <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
+                     <div class="edit-btn"><img src="assets/edit-drk.svg" alt=""></div>
                   </div>
                </div>
                <div class="task-item">
                   <div class="content">
-                     <input type="checkbox" name="checkbox" id="fd">
-                     <label for="fd">Read Book</label>
+                     <input type="checkbox" name="checkbox" id="r-tsk-2">
+                     <label for="r-tsk-2">Read Book</label>
                   </div>
                   <div class="inf-util">
-                     <div class="edit-btn"><img src="src/assets/edit-drk.svg" alt=""></div>
+                     <div class="edit-btn"><img src="assets/edit-drk.svg" alt=""></div>
                   </div>
                </div>
                <!-- Repititave Task item component -->

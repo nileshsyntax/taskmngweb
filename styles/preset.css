@@ -1,0 +1,70 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   position: relative;
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+   font-family: "Ubuntu Mono", monospace;
+   color: var(--font-tuil-drk);
+   word-spacing: -3px;
+   user-select: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: 200;
+}
+:root {
+
+   /* light pallate*/
+   --light-fg: #deedee;
+   --light-bg: #f6fffe;
+   
+   /* dark pallate */
+   --dark-fg: #343a53;
+   --dark-bg: #272c41;
+
+
+   --theme-col0r: #c0fff6;
+
+   /* svg, font & custom icon color */
+   --font-util-lgt: #f0f8ff;
+   --font-tuil-drk: #465170;
+
+   /* for the gradient background */
+   --c1: #f6f1ff;
+   --c2: #d8fffa59;
+   --c3: #fbc2eb;
+   --c4: #a6c1ee;
+   --c5: #34b7f383;
+}
+
+main {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   gap: 16px;
+   padding: 16px;
+   background-image:
+      radial-gradient(at 20% 30%, var(--c1) 0px, transparent 60%),
+      radial-gradient(at 80% 20%, var(--c2) 0px, transparent 60%),
+      radial-gradient(at 40% 70%, var(--c3) 0px, transparent 60%),
+      radial-gradient(at 70% 80%, var(--c4) 0px, transparent 70%),
+      radial-gradient(at 10% 90%, var(--c5) 0px, transparent 60%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-blend-mode: screen;
+   transition: background 1s ease;
+}
+
+
+

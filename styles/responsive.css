@@ -15,7 +15,7 @@
       visibility: collapse;
    }
 
-   #task-sec {
+   #task-panel {
       grid-column: 1 / 3;
       grid-row: 2;
    }

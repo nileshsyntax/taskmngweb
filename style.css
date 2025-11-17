@@ -1,92 +1,25 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   position: relative;
-}
+@import url("styles/preset.css");
 
-html,
-body {
-   width: 100%;
-   height: 100%;
-   font-family: "Ubuntu Mono", monospace;
-   color: var(--font-drk);
-   word-spacing: -3px;
-   /* background: var(--light-bg); */
-   background: #b2ece42d;
 
-}
-
-:root {
-   --dark-bg: #272c41;
-   --dark-fg: #343a53;
-
-   --light-bg: #deedee;
-   --light-fg: #f6fffe;
-
-   --theme-colr: #c0fff6;
-
-   /* font and most svg color */
-   --font-lgt: #f0f8ff;
-   --font-drk: #465170;
-
-   /* adjust these colors or add more */
-   --c1: #f6f1ff;
-   --c2: #d8fffa59;
-   --c3: #fbc2eb;
-   --c4: #a6c1ee;
-   --c5: #34b7f383;
-}
 
 .cmn-stl {
    padding: 15px;
    border-radius: 18px;
    box-shadow: 0px 0px 4px 0px #3f3f3f28;
-   background: var(--light-fg);
+   background: var(--light-bg);
 }
-
-h1,
-h2,
-h3,
-h4 {
-   font-weight: 200;
-}
-
-main {
-   width: 100%;
-   height: 100%;
+.pcrd-ttl {
+   line-height: 25px;
+   padding: 3px 2px;
+   margin-bottom: 6px;
+   border-bottom: 1px solid #4651701f;
    display: flex;
-   gap: 16px;
-   padding: 16px;
-   background-image:
-      radial-gradient(at 20% 30%, var(--c1) 0px, transparent 60%),
-      radial-gradient(at 80% 20%, var(--c2) 0px, transparent 60%),
-      radial-gradient(at 40% 70%, var(--c3) 0px, transparent 60%),
-      radial-gradient(at 70% 80%, var(--c4) 0px, transparent 70%),
-      radial-gradient(at 10% 90%, var(--c5) 0px, transparent 60%);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   background-blend-mode: screen;
-   transition: background 1s ease;
+   justify-content: space-between;
 }
-
-#main-sec {
-   margin-top: 1px;
-   flex: 6;
-   display: grid;
-   grid-template-columns: 10fr 4fr;
-   grid-template-rows: 50px 1fr;
-   grid-template-areas:
-      'top-nav top-nav'
-      'task-sec daily-rep';
-   gap: 16px;
-}
+/* ********** Element custome style ********** */
 
 
-/* -------- Here goes different -------- */
-
-/* -------- id side panel section -------- */
+/* -------- id side-panel -------- */
 #side-panel {
    flex: 1;
    min-width: 210px;
@@ -102,14 +35,7 @@ main {
    padding: 10px 10px 0 10px;
 }
 
-.pcrd-ttl {
-   line-height: 25px;
-   padding: 3px 2px;
-   margin-bottom: 6px;
-   border-bottom: 1px solid #4651701f;
-   display: flex;
-   justify-content: space-between;
-}
+
 
 .pcrd-ttl img {
    width: 18px;
@@ -136,7 +62,7 @@ main {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background: var(--theme-colr);
+   background: var(--theme-col0r);
 }
 
 .setting .st-access {
@@ -156,13 +82,12 @@ main {
    align-items: center;
    padding: 1px;
    border: 1px solid #0c302a;
-   /* background: linear-gradient(to right, #c6ffff, #272c41); */
    border-radius: 3px;
 }
 .circle{
    width: 48%;
    height: 100%;
-   background-color: #404961;
+   background-color: var(--font-tuil-drk);
    border-radius: 2px;
 }
 .circle img {
@@ -177,13 +102,11 @@ main {
    align-items: center;
    gap: 5px;
    font-size: 14px;
-   background-color: #deeeeca1;
-   /* border-bottom: 1px solid #3a4e4b15; */
+   background-color: var(--light-fg);
    border-radius: 10px;
+   cursor: pointer;
 }
-.onselect {
-   background-color: #deedee;
-}
+
 .c-name {
    flex: 1;
 }
@@ -192,34 +115,43 @@ main {
    width: 8px;
    aspect-ratio: 1;
    border-radius: 2px;
-   background: var(--theme-colr);
+   background: var(--theme-col0r);
    background: #25dbc0;
 }
 
 
+/* *************** id main-panel *************** */
 
-/* id main-sec section elements */
+#main-panel {
+   margin-top: 1px;
+   flex: 6;
+   display: grid;
+   grid-template-columns: 10fr 4fr;
+   grid-template-rows: 50px 1fr;
+   grid-template-areas:
+      'nav nav'
+      'task-panel daily-rep';
+   gap: 16px;
+}
 
-#top-nav {
+/* ---------- child #main-panel ---------- */
+#nav {
    padding: 0 12px;
-   grid-area: top-nav;
+   grid-area: nav;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
-#task-sec {
-   grid-area: task-sec;
+#task-panel {
+   grid-area: task-panel;
 }
 
 #daily-rep {
    grid-area: daily-rep;
 }
 
-
-
-
-/* id top-nav elements */
+/* ---------- id nav  ---------- */
 #prof-info {
    display: flex;
    gap: 7px;
@@ -261,9 +193,11 @@ main {
    width: 26px;
 }
 
+
+/* ---------- id task-panel elements ---------- */
+
 .task-item-list {
    margin-top: 10px;
-   /* border: 1px solid red; */
 }
 
 .task-item {
@@ -272,27 +206,25 @@ main {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background-color: var(--light-bg);
+   background-color: var(--light-fg);
    border-radius: 8px;
+   cursor: pointer;
 }
 .task-item .inf-util{
    display: flex;
    align-items: center;
-   gap: 7px;
+   gap: 10px;
 }
 .inf-util span {
-   background-color: #46517025;
-   /* text-decoration: underline; */
-   padding: 4px 6px;
    font-size: 11px;
    border-radius: 6px;
 }
-.edit-btn {
-   /* width: 24px; */
-   /* aspect-ratio: 1; */
+
+.inf-util .edit-btn {
+   width: 24px;
+   aspect-ratio: 1;
    display: grid;
    place-content: center;
-
 }
 .edit-btn img {
    width: 14px;
